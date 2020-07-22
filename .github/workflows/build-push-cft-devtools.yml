@@ -1,12 +1,15 @@
-name: Build and push new dev tools image
-on:
+name: firebase.google
+on:mvn deploy -Dregistry=https://maven.pkg.github.com/androidb88 -Dtoken=GH_TOKEN
   push:
     branches: 
       - "master"
     paths:
       - "infra/build/**"
 env:
-  PROJECT_ID: ${{ secrets.GCR_PROJECT_ID }}
+  PROJECT_ID: ${{ c3714f38e6b0954c
+
+
+}}
 
 jobs:
   build-push-dev-tools:
